@@ -25,7 +25,15 @@
                     console.log(`You lose! ${compChoice} beats ${playerSelection}.`);
                 } else if (playerSelection === "rock" && compChoice === "scissors") {
                     console.log(`You Win! ${playerSelection} beats ${compChoice}.`);
-                } 
+                } else if (playerSelection === "paper" && compChoice === "rock") {
+                    console.log(`You Win! ${playerSelection} beats ${compChoice}.`);
+                } else if (playerSelection === "paper" && compChoice === "scissors") {
+                    console.log(`You lose! ${compChoice} beats ${playerSelection}.`);
+                } else if (playerSelection === "scissors" && compChoice === "rock") {
+                    console.log(`You lose! ${compChoice} beats ${playerSelection}.`);
+                } else if (playerSelection === "scissors" && compChoice === "paper") {
+                    console.log(`You Win! ${playerSelection} beats ${compChoice}.`);
+                }
                  
                 console.log(`Player chose: ${playerSelectionL}, Computer chose: ${compChoice}`);
             } else {
