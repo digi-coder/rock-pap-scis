@@ -9,17 +9,22 @@
 <body>
     <script>
         let playerSelection = prompt ("Pick: Rock, Paper or Scissors?");
+        if (playerSelection != null){
+            let playerSelectionL = playerSelection.toLowerCase;
         
-        if (playerSelection === "rock" || playerSelection === "paper" || playerSelection === "scissors"){
-            function computerPlay() {
-                let choices = ["rock", "paper", "scissors"];
-                let compSelection = Math.floor(Math.random() * choices.length);
-                return compChoice = choices[compSelection];
+            if (playerSelectionL === "rock" || playerSelectionL === "paper" || playerSelectionL === "scissors"){
+                function computerPlay() {
+                    let choices = ["rock", "paper", "scissors"];
+                    let compSelection = Math.floor(Math.random() * choices.length);
+                    return compChoice = choices[compSelection];
+                }
+                computerPlay();
+                console.log(playerSelectionL, compChoice);
+            } else {
+                console.log("Poop!");
             }
-            computerPlay();
-            console.log(playerSelection, compChoice);
         } else {
-            console.log("Poop");
+            console.log("Poop L!");
         }
 
 
