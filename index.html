@@ -10,8 +10,8 @@
     <script>
         let playerSelection = prompt ("Pick: Rock, Paper or Scissors?");
         if (playerSelection != null){
-            let playerSelectionL = playerSelection.toLowerCase;
-        
+            let playerSelectionL = playerSelection.toLowerCase();
+
             if (playerSelectionL === "rock" || playerSelectionL === "paper" || playerSelectionL === "scissors"){
                 function computerPlay() {
                     let choices = ["rock", "paper", "scissors"];
@@ -20,6 +20,13 @@
                 }
                 computerPlay();
                 console.log(playerSelectionL, compChoice);
+
+                // function playRound(playerSelectionL, compChoice) {
+                //     if (playerSelectionL === "rock" && compChoice === "paper"){
+                //         console.log ("You lose! Paper beats Rock.")
+                //     }
+                // }
+
             } else {
                 console.log("Poop!");
             }
