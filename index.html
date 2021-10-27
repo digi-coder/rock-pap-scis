@@ -19,14 +19,15 @@
                     return compChoice = choices[compSelection];
                 }
                 computerPlay();
-                console.log(playerSelectionL, compChoice);
-
-                // function playRound(playerSelectionL, compChoice) {
-                //     if (playerSelectionL === "rock" && compChoice === "paper"){
-                //         console.log ("You lose! Paper beats Rock.")
-                //     }
-                // }
-
+                if (playerSelection === compChoice) {
+                    console.log(`It\'s a tie! you both chose ${playerSelection}`);
+                } else if (playerSelection === "rock" && compChoice === "paper") {
+                    console.log(`You lose! ${compChoice} beats ${playerSelection}.`);
+                } else if (playerSelection === "rock" && compChoice === "scissors") {
+                    console.log(`You Win! ${playerSelection} beats ${compChoice}.`);
+                } 
+                 
+                console.log(`Player chose: ${playerSelectionL}, Computer chose: ${compChoice}`);
             } else {
                 console.log("Poop!");
             }
