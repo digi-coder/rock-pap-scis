@@ -8,47 +8,50 @@
 </head>
 <body>
     <script>
-        let playerSelection = prompt ("Pick: Rock, Paper or Scissors?");
-        if (playerSelection != null){
-            let playerSelectionL = playerSelection.toLowerCase();
+        function game(){
+                let i = 0;
+                do {
+                    i += 1;
+                let playerSelection = prompt ("Pick: Rock, Paper or Scissors?");
+                if (playerSelection != null){
+                    let playerSelectionL = playerSelection.toLowerCase();
 
-            if (playerSelectionL === "rock" || playerSelectionL === "paper" || playerSelectionL === "scissors"){
-                function computerPlay() {
-                    let choices = ["rock", "paper", "scissors"];
-                    let compSelection = Math.floor(Math.random() * choices.length);
-                    return compChoice = choices[compSelection];
-                }
-                computerPlay();
-
-                function playRound(playerSelectionL, compChoice){
-                    if (playerSelectionL === compChoice) {
-                        return `It\'s a tie! you both chose ${playerSelectionL}.`;
-                    } else if (playerSelectionL === "rock" && compChoice === "paper") {
-                        return `You lose! ${compChoice} beats ${playerSelectionL}.`;
-                    } else if (playerSelectionL === "rock" && compChoice === "scissors") {
-                        return `You Win! ${playerSelectionL} beats ${compChoice}.`;
-                    } else if (playerSelectionL === "paper" && compChoice === "rock") {
-                        return `You Win! ${playerSelectionL} beats ${compChoice}.`;
-                    } else if (playerSelectionL === "paper" && compChoice === "scissors") {
-                        return `You lose! ${compChoice} beats ${playerSelectionL}.`;
-                    } else if (playerSelectionL === "scissors" && compChoice === "rock") {
-                        return `You lose! ${compChoice} beats ${playerSelectionL}.`;
-                    } else if (playerSelectionL === "scissors" && compChoice === "paper") {
-                        return `You Win! ${playerSelectionL} beats ${compChoice}.`;
+                    if (playerSelectionL === "rock" || playerSelectionL === "paper" || playerSelectionL === "scissors"){
+                        function computerPlay() {
+                            let choices = ["rock", "paper", "scissors"];
+                            let compSelection = Math.floor(Math.random() * choices.length);
+                            return compChoice = choices[compSelection];
+                        }
+                        computerPlay();
+                        function playRound(playerSelectionL, compChoice){
+                            if (playerSelectionL === compChoice) {
+                                return `It\'s a tie! you both chose ${playerSelectionL}.`;
+                            } else if (playerSelectionL === "rock" && compChoice === "paper") {
+                                return `You lose! ${compChoice} beats ${playerSelectionL}.`;
+                            } else if (playerSelectionL === "rock" && compChoice === "scissors") {
+                                return `You Win! ${playerSelectionL} beats ${compChoice}.`;
+                            } else if (playerSelectionL === "paper" && compChoice === "rock") {
+                                return `You Win! ${playerSelectionL} beats ${compChoice}.`;
+                            } else if (playerSelectionL === "paper" && compChoice === "scissors") {
+                                return `You lose! ${compChoice} beats ${playerSelectionL}.`;
+                            } else if (playerSelectionL === "scissors" && compChoice === "rock") {
+                                return `You lose! ${compChoice} beats ${playerSelectionL}.`;
+                            } else if (playerSelectionL === "scissors" && compChoice === "paper") {
+                                return `You Win! ${playerSelectionL} beats ${compChoice}.`;
+                            }
+                        }
+                        console.log(`Player chose: ${playerSelectionL}, Computer chose: ${compChoice}`);
+                        console.log(playRound(playerSelectionL, compChoice));
+                    } else {
+                        console.log("Poop!");
                     }
+                } else {
+                    console.log("Poop L!");
                 }
-                console.log(`Player chose: ${playerSelectionL}, Computer chose: ${compChoice}`);
-                console.log(playRound(playerSelectionL, compChoice));
-            } else {
-                console.log("Poop!");
-            }
-        } else {
-            console.log("Poop L!");
-        }
+            } while (i < 5);
+        } 
 
-
-
-
+        game();
     </script>
 </body>
 </html>
