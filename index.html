@@ -52,6 +52,13 @@
                         console.log("Poop L!");
                     }
             } while (i < 5);
+            if (playerScore === computerScore) {
+                                console.log("Final Score: It's a tie!");
+                            } else if (playerScore > computerScore) {
+                                console.log("Final Score: You won!");
+                            } else if (playerScore < computerScore) {
+                                console.log("Final Score: You lost!");
+                            }
         } 
 
         game();
