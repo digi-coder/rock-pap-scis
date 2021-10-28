@@ -9,22 +9,29 @@
 <body>
     <script>
         function game(){
-                let i = 0;
-                let playerScore = 0;
-                let computerScore = 0;
+            //Setup Variables
+            let i = 0;
+            let playerScore = 0;
+            let computerScore = 0;
+                //Initiate a while loop to repeat game 5 times
                 do {
                     i += 1;
+                    //Prompt human player to choose between rock, paper and scissors
                     let playerSelection = prompt ("Pick: Rock, Paper or Scissors?");
+                    //If player selection is not null, convert his choice to lower case
                     if (playerSelection != null){
                         let playerSelectionL = playerSelection.toLowerCase();
-
+                        //then confirm player input is either rock, paper or scissors only
                         if (playerSelectionL === "rock" || playerSelectionL === "paper" || playerSelectionL === "scissors"){
+                            //If player choice correct, next let computer pick a choice
                             function computerPlay() {
                                 let choices = ["rock", "paper", "scissors"];
                                 let compSelection = Math.floor(Math.random() * choices.length);
                                 return compChoice = choices[compSelection];
                             }
                             computerPlay();
+                            //Compare player selection to computer selection, pick a winner 
+                            //for current game session, keep track and update players scores
                             function playRound(playerSelectionL, compChoice){
                                 if (playerSelectionL === compChoice) {playerScore = ++playerScore; computerScore = ++computerScore;
                                     return `It\'s a tie! you both chose ${playerSelectionL}.`;
@@ -42,16 +49,22 @@
                                     return `You Win! ${playerSelectionL} beats ${compChoice}.`;
                                 }
                             }
+                            //At each game session, display player choice and computer choice
                             console.log(`Player chose: ${playerSelectionL}, Computer chose: ${compChoice}`);
                             console.log(playRound(playerSelectionL, compChoice));
+                            //At each game session, display current player score and current computer score
                             console.log(`Player Score: ${playerScore}, Computer Score: ${computerScore}`);
                         } else {
+                            //If player typed anything other than rock, paper or scissors in the prompt, display this
                             console.log("Poop!");
                         }
                     } else {
+                        //If player input is null, display this
                         console.log("Poop L!");
                     }
+              //Start the loop over if number of games is less than 5
             } while (i < 5);
+            //Final score comparison and winner declaration
             if (playerScore === computerScore) {
                                 console.log("Final Score: It's a tie!");
                             } else if (playerScore > computerScore) {
@@ -59,8 +72,8 @@
                             } else if (playerScore < computerScore) {
                                 console.log("Final Score: You lost!");
                             }
-        } 
-
+                } 
+        //Run the game
         game();
     </script>
 </body>
