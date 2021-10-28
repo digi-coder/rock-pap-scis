@@ -56,8 +56,11 @@
                             //...at each game session, we can display current player score and current computer score
                             console.log(`Player Score: ${playerScore}, Computer Score: ${computerScore}`);
                         } else {
-                            //If player typed anything other than rock, paper or scissors in the prompt, display this
-                            console.log("Poop!");
+                            //If player typed anything other than rock, paper or scissors 
+                            //in the prompt, display this
+                            console.log("Poop!"); 
+                            //then remove 1 iteration so that player can still play 5 games
+                            i = i - 1;
                         }
                     } else {
                         //If player input is null, display this
