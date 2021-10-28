@@ -18,10 +18,10 @@
                     i += 1;
                     //Prompt human player to choose between rock, paper and scissors
                     let playerSelection = prompt ("Pick: Rock, Paper or Scissors?");
-                    //If player selection is not null, convert his choice to lower case
+                    //If player selection is not null, convert his choice to lower case,
                     if (playerSelection != null){
                         let playerSelectionL = playerSelection.toLowerCase();
-                        //then confirm player input is either rock, paper or scissors only
+                        //then confirm that player input is between either rock, paper or scissors only
                         if (playerSelectionL === "rock" || playerSelectionL === "paper" || playerSelectionL === "scissors"){
                             //If player choice correct, next let computer pick a choice
                             function computerPlay() {
@@ -30,7 +30,7 @@
                                 return compChoice = choices[compSelection];
                             }
                             computerPlay();
-                            //Compare player selection to computer selection, pick a winner 
+                            //At each of the 5 game rounds, compare player selection to computer selection, pick a winner 
                             //for current game session, keep track and update players scores
                             function playRound(playerSelectionL, compChoice){
                                 if (playerSelectionL === compChoice) {playerScore = ++playerScore; computerScore = ++computerScore;
@@ -51,8 +51,9 @@
                             }
                             //At each game session, display player choice and computer choice
                             console.log(`Player chose: ${playerSelectionL}, Computer chose: ${compChoice}`);
+                            //Pull data from the playRound function so that...
                             console.log(playRound(playerSelectionL, compChoice));
-                            //At each game session, display current player score and current computer score
+                            //...at each game session, we can display current player score and current computer score
                             console.log(`Player Score: ${playerScore}, Computer Score: ${computerScore}`);
                         } else {
                             //If player typed anything other than rock, paper or scissors in the prompt, display this
