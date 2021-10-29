@@ -13,6 +13,7 @@
             let i = 0;
             let playerScore = 0;
             let computerScore = 0;
+            let playerQuit = 0;
                 //Initiate a while loop to repeat game 5 times
                 do {
                     i += 1;
@@ -64,19 +65,24 @@
                         }
                     } else {
                         //If player input is null, display this
-                        console.log("Poop L!");
+                        console.log("Poop L!. Game quit by player.");
+                        playerQuit =+ 1;
+                        break;
                     }
               //Start the loop over if number of games is less than 5
             } while (i < 5);
-            //Final score comparison and winner declaration
-            if (playerScore === computerScore) {
-                                console.log("Final Score: It's a tie!");
-                            } else if (playerScore > computerScore) {
-                                console.log("Final Score: You won!");
-                            } else if (playerScore < computerScore) {
-                                console.log("Final Score: You lost!");
-                            }
-                } 
+            //Check if player quit and if not...
+            if (playerQuit < 1){
+                //...display the final score comparison and declare a winner
+                if (playerScore === computerScore) {
+                                    console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. It's a tie!`);
+                                } else if (playerScore > computerScore) {
+                                    console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. You won!`);
+                                } else if (playerScore < computerScore) {
+                                    console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. You lost!`);
+                                }
+            }                    
+        } 
         //Run the game
         game();
     </script>
