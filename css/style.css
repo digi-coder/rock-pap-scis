@@ -1,23 +1,19 @@
 /* style.css */
 
-.container {
+#container {
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
 }
 
-.header {
+#header {
     
 }
 
-.banner {
+#banner {
     width: 100%;
     min-height: 100vh;
     background-image:url(../images/banner-image.jpg);
     background-size: cover;
-    /* background-position: center 100%; */
-    /* position: absolute;
-    top: 0;
-    left: 0; */
 }
 
