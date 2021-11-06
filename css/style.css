@@ -1,13 +1,23 @@
 /* style.css */
 
-.header {
-    margin-bottom: 40px;
+.container {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
 }
 
-#banner-image {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+.header {
+    
 }
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background-image:url(../images/banner-image.jpg);
+    background-size: cover;
+    /* background-position: center 100%; */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+
