@@ -76,4 +76,4 @@
             }                    
         } 
         //Run the game
-        game();
+        //game();
