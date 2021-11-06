@@ -1,5 +1,9 @@
 /* style.css */
 
+.header {
+    margin-bottom: 40px;
+}
+
 #banner-image {
     width: 100%;
     height: auto;
