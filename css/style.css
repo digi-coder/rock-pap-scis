@@ -15,6 +15,10 @@
     flex: 4;
 }
 
+#header .logo img {
+    width: 150px;
+}
+
 #header .flex-nav {
     display:flex;
     justify-content:flex-end;
