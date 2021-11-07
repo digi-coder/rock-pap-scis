@@ -1,4 +1,10 @@
-
+function hover(element) {
+    element.setAttribute('src', 'images/play-button-push.png');
+  }
+  
+  function unhover(element) {
+    element.setAttribute('src', 'images/play-button-w.png');
+  }
     
     console.log("Hi!");
         function game(){
