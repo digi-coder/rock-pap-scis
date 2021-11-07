@@ -55,7 +55,7 @@ html {
     align-items:center;
     width: 100%;
     min-height: 100vh;
-    background-image:url(../images/banner-image-l.jpg);
+    background-image:url(../images/banner-image-bw.jpg);
     background-size: cover;
 }
 
@@ -81,7 +81,7 @@ html {
     line-height: 1.2;
     font-weight: 400;
     margin: 0;
-    padding-left:80px;
+    padding-left:100px;
     font-family: Josefin Sans,sans-serif;
 }
 
@@ -96,7 +96,7 @@ html {
     font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
-    padding-left:50px;
+    padding-left:80px;
     width:100%;
     white-space: nowrap;
     font-family: Josefin Sans,sans-serif;
@@ -113,15 +113,6 @@ html {
     justify-content: flex-end;
     align-items:center;
     flex:2;
-}
-
-#hero-banner-right h3 {
-    font-size: 25px;
-    font-weight: 300;
-    color:white;
-    text-transform: uppercase;
-    padding-right:200px;
-    font-family: Josefin Sans,sans-serif;
 }
 
 #main {
