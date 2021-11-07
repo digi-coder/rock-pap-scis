@@ -7,6 +7,7 @@
 #header {
     display:flex;
     align-items:center;
+    background-color:rgb(197, 197, 197);
 }
 
 #header .logo {
@@ -45,9 +46,45 @@
 }
 
 #hero-banner {
+    display:flex;
+    align-items:center;
     width: 100%;
     min-height: 100vh;
     background-image:url(../images/banner-image-l.jpg);
     background-size: cover;
 }
 
+#hero-banner-inner {
+    display:flex;
+    width:100%;
+}
+
+#hero-banner-left {
+    display:flex;
+    justify-content: flex-start;
+    flex:4;
+}
+
+#hero-banner-left h1 {
+    font-size: 45px;
+    color:white;
+    line-height: 1.2;
+    font-weight: 400;
+    margin: 0;
+    padding-left:200px;
+    font-family: Josefin Sans,sans-serif;
+}
+
+#hero-banner-right {
+    display:flex;
+    justify-content: flex-end;
+}
+
+#hero-banner-right h3 {
+    font-size: 25px;
+    font-weight: 300;
+    color:white;
+    text-transform: uppercase;
+    padding-right:200px;
+    font-family: Josefin Sans,sans-serif;
+}
