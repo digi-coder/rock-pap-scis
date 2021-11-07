@@ -6,7 +6,7 @@ function hover(element) {
     element.setAttribute('src', 'images/play-button-w.png');
   }
     
-    console.log("Hi!");
+
         function game(){
             //Setup Variables to use later
             let i = 0;

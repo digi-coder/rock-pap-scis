@@ -117,9 +117,41 @@ html {
 
 #main {
     display:flex;
-    align-items:center;
+    flex-direction:column;
     width: 100%;
     min-height: 100vh;
     background-color:whitesmoke;
-    background-size: cover;
+}
+
+#game-rounds {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:rgba(255, 0, 0, 0.767);
+    font-family: Josefin Sans,sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#game-scores {
+    display:flex;
+    justify-content:center;
+}
+
+#player-score {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+#game-ties {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#computer-score {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
 }
