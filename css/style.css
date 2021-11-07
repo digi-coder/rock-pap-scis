@@ -1,5 +1,10 @@
 /* style.css */
 
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
 #container {
 
 }
@@ -62,26 +67,52 @@
 #hero-banner-left {
     display:flex;
     justify-content: flex-start;
-    flex:4;
+    flex:3;
 }
 
 #hero-banner-left h1 {
     display:flex;
     justify-content: flex-start;
     align-items:center;
+    width:100%;
+    white-space: nowrap;
     font-size: 45px;
     color:white;
     line-height: 1.2;
     font-weight: 400;
     margin: 0;
-    padding-left:200px;
+    padding-left:80px;
     font-family: Josefin Sans,sans-serif;
+}
+
+#hero-banner-center {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex:2;
+}
+
+#hero-banner-center h3 {
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left:50px;
+    width:100%;
+    white-space: nowrap;
+    font-family: Josefin Sans,sans-serif;
+}
+
+#hero-banner-center a {
+    color:whitesmoke;
+    text-decoration: none;
+    display: inline-block;
 }
 
 #hero-banner-right {
     display:flex;
     justify-content: flex-end;
     align-items:center;
+    flex:2;
 }
 
 #hero-banner-right h3 {
@@ -91,4 +122,13 @@
     text-transform: uppercase;
     padding-right:200px;
     font-family: Josefin Sans,sans-serif;
+}
+
+#main {
+    display:flex;
+    align-items:center;
+    width: 100%;
+    min-height: 100vh;
+    background-color:whitesmoke;
+    background-size: cover;
 }
