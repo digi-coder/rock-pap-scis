@@ -12,7 +12,7 @@ html {
 #header {
     display:flex;
     align-items:center;
-    background-color:white;
+    background-color:black;
 }
 
 #header .logo {
@@ -41,13 +41,12 @@ html {
 }
 
 #header .flex-nav .nav-links a {
-    color: #676b72;
+    color: whitesmoke;
     text-decoration: none;
     display: inline-block;
     font-family: Josefin Sans,sans-serif;
     font-weight: 300;
     font-size: 21px;
-    color: #020a20;
 }
 
 #hero-banner {
