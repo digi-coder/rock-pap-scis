@@ -38,6 +38,10 @@
     color: #676b72;
     text-decoration: none;
     display: inline-block;
+    font-family: Josefin Sans,sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #020a20;
 }
 
 #hero-banner {
