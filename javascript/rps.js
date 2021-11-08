@@ -10,7 +10,6 @@ function unhover(element) {
 //are not available from the outside.
 const game = () => {
     //Setup Variables to use later
-
     let pScore = 0;
     let cScore = 0;
     let tScore = 0;
@@ -26,6 +25,7 @@ const game = () => {
                 const computerNumber = Math.floor(Math.random() * 3);
                 const compChoice = computerOptions[computerNumber];
                 compareHands(this.textContent, compChoice);
+                // console.log(this.textContent, compChoice);
             });
         });
     };
@@ -42,10 +42,11 @@ const game = () => {
     //Compare player selection to computer selection, pick a winner 
     //for current game session, keep track and update players scores
     const compareHands = (playerChoice, compChoice) => {
+        // console.log(playerChoice, compChoice);
         const winner = document.querySelector('#winner p');
         if (playerChoice === compChoice) {
-            tScore++;
             winner.textContent = `It\'s a tie! You both chose ${playerChoice}.`;
+            tScore++;
             updateScore();
             return;
         } else if (playerChoice === "rock" && compChoice === "paper") {
@@ -88,11 +89,7 @@ const game = () => {
     //console.log(playRound(playerSelection, compChoice));
     //...at each game session, we can display current player score and current computer score
 
-
     // Computer Score: ${computerScore}`);
-
-
-
 
     // if (playerScore === computerScore) {
     //     console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. It's a tie!`);
@@ -102,12 +99,6 @@ const game = () => {
     //     console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. You lost!`);
     // }
 
-    //Rock, Paper, Scissors buttons listener
-    // buttons.forEach(button => {
-    //     button.addEventListener('click', function () {
-    //         playRound(button.value)
-    //     })
-    // })
 }
 
 //Start the game function
