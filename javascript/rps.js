@@ -42,14 +42,18 @@ const game = () => {
     //Compare player selection to computer selection, pick a winner 
     //for current game session, keep track and update players scores
     const compareHands = (playerChoice, compChoice) => {
-        // console.log(playerChoice, compChoice);
+        console.log(playerChoice, compChoice);
         const winner = document.querySelector('#winner p');
+        
         if (playerChoice === compChoice) {
+            pooop
             winner.textContent = `It\'s a tie! You both chose ${playerChoice}.`;
             tScore++;
             updateScore();
             return;
-        } else if (playerChoice === "rock" && compChoice === "paper") {
+        } 
+        
+        if (playerChoice === "rock" && compChoice === "paper") {
             cScore++;
             winner.textContent = `You lose! ${compChoice} beats ${playerChoice}.`;
             updateScore();
@@ -78,8 +82,8 @@ const game = () => {
             winner.textContent = `You Win! ${playerChoice} beats ${compChoice}.`;
             updateScore();
             return;
-        }
-    }
+        };
+    };
 
     playRound();
 
@@ -99,7 +103,7 @@ const game = () => {
     //     console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. You lost!`);
     // }
 
-}
+};
 
 //Start the game function
 game();
