@@ -5,6 +5,10 @@ function hover(element) {
   function unhover(element) {
     element.setAttribute('src', 'images/play-button-w.png');
   }
+
+document.getElementById('rock').onclick = playerSelection;
+document.getElementById('paper').onclick = reply_click;
+document.getElementById('scissors').onclick = reply_click;
     
 
         function game(){

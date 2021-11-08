@@ -76,10 +76,10 @@ html {
     align-items:center;
     width:100%;
     white-space: nowrap;
-    font-size: 45px;
+    font-size: 40px;
     color:white;
     line-height: 1.2;
-    font-weight: 400;
+    font-weight: lighter;
     margin: 0;
     padding-left:100px;
     font-family: Josefin Sans,sans-serif;
@@ -93,7 +93,7 @@ html {
 }
 
 #hero-banner-center h3 {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
     text-transform: uppercase;
     padding-left:80px;
@@ -132,28 +132,87 @@ html {
     font-family: Josefin Sans,sans-serif;
     font-size: 16px;
     text-transform: uppercase;
+    font-weight:lighter;
+    padding-top:80px;
+    padding-bottom:20px;
 }
 
-#game-scores {
+#game-score-titles {
     display:flex;
     justify-content:space-around;
+    /* width:80%; */
     /* flex-direction: column; */
+    font-size:20px;
+    font-weight:lighter;
 }
 
 #player-score {
     display:flex;
     justify-content:flex-start;
     align-items:center;
+    color:rgb(153, 151, 151);
+    
 }
 
 #game-ties {
     display:flex;
     justify-content:center;
     align-items:center;
+    color:rgb(153, 151, 151);
 }
 
 #computer-score {
     display:flex;
     justify-content:flex-end;
+    align-items:center;
+    color:rgb(153, 151, 151);
+}
+
+#game-score-values {
+    display:flex;
+    justify-content:space-around;
+    /* width:80%; */
+    font-size:40px;
+    font-weight:lighter;
+}
+
+#player-score-value {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+#game-ties-value {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#computer-score-value {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+#rock-paper-scissors-interface {
+    display:flex;
+    justify-content:space-around;
+}
+
+#player-interface {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+#game-tally {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+#computer-output {
+    display:flex;
+    justify-content:flex-start;
     align-items:center;
 }
