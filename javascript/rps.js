@@ -11,17 +11,18 @@ function unhover(element) {
 const game = () => {
     //Setup Variables to use later
 
-    let playerScore = 0;
-    let computerScore = 0;
-    //const buttons = document.querySelectorAll('input');
+    let pScore = 0;
+    let cScore = 0;
+    let tScore = 0;
 
-    function playRound(playerSelection) {
+    const playRound = () => {
 
         const options = document.querySelectorAll("#player-options button");
         const computerOptions = ["rock", "paper", "scissors"];
 
         options.forEach(option => {
-            option.addEventListener("click", function(){
+            option.addEventListener("click", function () {
+                //Computer Choice
                 const computerNumber = Math.floor(Math.random() * 3);
                 const compChoice = computerOptions[computerNumber];
                 compareHands(this.textContent, compChoice);
@@ -29,42 +30,54 @@ const game = () => {
         });
     };
 
+    const updateScore = () => {
+        const playerScore = document.querySelector('#player-score-total');
+        const computerScore = document.querySelector('#computer-score-total');
+        const tieScore = document.querySelector('#game-ties-value p');
+        playerScore.textContent = pScore;
+        computerScore.textContent = cScore;
+        tieScore.textContent = tScore;
+    };
+
     //Compare player selection to computer selection, pick a winner 
     //for current game session, keep track and update players scores
     const compareHands = (playerChoice, compChoice) => {
-        const winner = document.querySelector('#winner');
+        const winner = document.querySelector('#winner p');
         if (playerChoice === compChoice) {
-            playerScore = ++playerScore; computerScore = ++computerScore;
-            winner.textContent = `It\'s a tie! you both chose ${playerSelection}.`;
+            tScore++;
+            winner.textContent = `It\'s a tie! You both chose ${playerChoice}.`;
+            updateScore();
             return;
         } else if (playerChoice === "rock" && compChoice === "paper") {
-            computerScore = ++computerScore;
-            winner.textContent = `You lose! ${compChoice} beats ${playerSelection}.`;
+            cScore++;
+            winner.textContent = `You lose! ${compChoice} beats ${playerChoice}.`;
+            updateScore();
             return;
         } else if (playerChoice === "rock" && compChoice === "scissors") {
-            playerScore = ++playerScore;
-            winner.textContent =  `You Win! ${playerSelection} beats ${compChoice}.`;
+            pScore++;
+            winner.textContent = `You Win! ${playerChoice} beats ${compChoice}.`;
+            updateScore();
             return;
         } else if (playerChoice === "paper" && compChoice === "rock") {
-            playerScore = ++playerScore;
-            winner.textContent =  `You Win! ${playerSelection} beats ${compChoice}.`;
+            pScore++;
+            winner.textContent = `You Win! ${playerChoice} beats ${compChoice}.`;
+            updateScore();
             return;
         } else if (playerChoice === "paper" && compChoice === "scissors") {
-            computerScore = ++computerScore;
-            winner.textContent =  `You lose! ${compChoice} beats ${playerSelection}.`;
+            cScore++;
+            winner.textContent = `You lose! ${compChoice} beats ${playerChoice}.`;
             return;
         } else if (playerChoice === "scissors" && compChoice === "rock") {
-            computerScore = ++computerScore;
-            winner.textContent =  `You lose! ${compChoice} beats ${playerSelection}.`;
+            cScore++;
+            winner.textContent = `You lose! ${compChoice} beats ${playerChoice}.`;
+            updateScore();
             return;
         } else if (playerChoice === "scissors" && compChoice === "paper") {
-            playerScore = ++playerScore;
-            winner.textContent =  `You Win! ${playerSelection} beats ${compChoice}.`;
+            pScore++;
+            winner.textContent = `You Win! ${playerChoice} beats ${compChoice}.`;
+            updateScore();
             return;
         }
-        document.getElementById('player-score-total').innerText = playerScore;
-        document.getElementById('computer-score-total').innerText = computerScore;
-        return;
     }
 
     playRound();
@@ -81,13 +94,13 @@ const game = () => {
 
 
 
-    if (playerScore === computerScore) {
-        console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. It's a tie!`);
-    } else if (playerScore > computerScore) {
-        console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. You won!`);
-    } else if (playerScore < computerScore) {
-        console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. You lost!`);
-    }
+    // if (playerScore === computerScore) {
+    //     console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. It's a tie!`);
+    // } else if (playerScore > computerScore) {
+    //     console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. You won!`);
+    // } else if (playerScore < computerScore) {
+    //     console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. You lost!`);
+    // }
 
     //Rock, Paper, Scissors buttons listener
     // buttons.forEach(button => {
@@ -96,7 +109,6 @@ const game = () => {
     //     })
     // })
 }
-
 
 //Start the game function
 game();
