@@ -44,15 +44,14 @@ const game = () => {
     const compareHands = (playerChoice, compChoice) => {
         console.log(playerChoice, compChoice);
         const winner = document.querySelector('#winner p');
-        
+
         if (playerChoice === compChoice) {
-            pooop
             winner.textContent = `It\'s a tie! You both chose ${playerChoice}.`;
             tScore++;
             updateScore();
             return;
-        } 
-        
+        }
+
         if (playerChoice === "rock" && compChoice === "paper") {
             cScore++;
             winner.textContent = `You lose! ${compChoice} beats ${playerChoice}.`;
@@ -86,23 +85,6 @@ const game = () => {
     };
 
     playRound();
-
-    //At each game session, display player choice and computer choice
-    //console.log(`Player chose: ${playerSelection}, Computer chose: ${compChoice}`);
-    //Pull data from the playRound function so that...
-    //console.log(playRound(playerSelection, compChoice));
-    //...at each game session, we can display current player score and current computer score
-
-    // Computer Score: ${computerScore}`);
-
-    // if (playerScore === computerScore) {
-    //     console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. It's a tie!`);
-    // } else if (playerScore > computerScore) {
-    //     console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. You won!`);
-    // } else if (playerScore < computerScore) {
-    //     console.log(`Final Score: Player Score: ${playerScore}, Computer Score: ${computerScore}. You lost!`);
-    // }
-
 };
 
 //Start the game function
