@@ -12,7 +12,7 @@ html {
 #header {
     display:flex;
     align-items:center;
-    background-color:black;
+    background-color:rgba(0, 0, 0, 0.890);
 }
 
 #header .logo {
