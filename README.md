@@ -1,1 +1,1 @@
-Make a simple implementation of grade-school classic “rock paper scissors" using javascript. It will initially be implemented without GUI, which will be added later on.
+Made a simple implementation of grade-school classic “rock paper scissors" using javascript.
