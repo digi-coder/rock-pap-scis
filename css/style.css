@@ -199,7 +199,20 @@ html {
 
 #rock-paper-scissors-interface {
     display:flex;
+    flex-direction:column;
     justify-content:space-around;
+}
+
+#hands player-hand {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+#hands computer-hand {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
 }
 
 #player-options {

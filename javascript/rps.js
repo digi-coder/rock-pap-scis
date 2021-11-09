@@ -17,6 +17,9 @@ const game = () => {
     const playRound = () => {
 
         const options = document.querySelectorAll("#player-options button");
+        const playerHand = document.querySelector("#player-hand");
+        const computerHand = document.querySelector("#computer-hand");
+        //Computer choices
         const computerOptions = ["rock", "paper", "scissors"];
 
         options.forEach(option => {
@@ -24,8 +27,10 @@ const game = () => {
                 //Computer Choice
                 const computerNumber = Math.floor(Math.random() * 3);
                 const compChoice = computerOptions[computerNumber];
+                //Update images
+                playerHand.src =`assets/${this.textContent}.png`;
+                computerHand.src =`assets/${compChoice}.png`;
                 compareHands(this.textContent, compChoice);
-                // console.log(this.textContent, compChoice);
             });
         });
     };
