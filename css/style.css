@@ -80,11 +80,11 @@ html {
     width:100%;
     white-space: nowrap;
     font-size: 40px;
-    color:white;
+    color:whitesmoke;
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: bold;
     margin: 0;
-    padding-left:100px;
+    padding-left:120px;
     font-family: Josefin Sans,sans-serif;
 }
 
