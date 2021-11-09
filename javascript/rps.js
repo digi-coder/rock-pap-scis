@@ -50,9 +50,7 @@ const game = () => {
             tScore++;
             updateScore();
             return;
-        }
-
-        if (playerChoice === "rock" && compChoice === "paper") {
+        } else if (playerChoice === "rock" && compChoice === "paper") {
             cScore++;
             winner.textContent = `You lose! ${compChoice} beats ${playerChoice}.`;
             updateScore();
@@ -70,6 +68,7 @@ const game = () => {
         } else if (playerChoice === "paper" && compChoice === "scissors") {
             cScore++;
             winner.textContent = `You lose! ${compChoice} beats ${playerChoice}.`;
+            updateScore();
             return;
         } else if (playerChoice === "scissors" && compChoice === "rock") {
             cScore++;
