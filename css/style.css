@@ -131,13 +131,13 @@ html {
     display:flex;
     justify-content:center;
     align-items:center;
-    color:rgba(255, 0, 0, 0.767);
+    color:rgba(231, 126, 245, 0.938);
     font-family: Josefin Sans,sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     font-weight:lighter;
     padding-top:80px;
-    padding-bottom:20px;
+    padding-bottom:80px;
 }
 
 #game-score-titles {
@@ -228,7 +228,7 @@ html {
     display:flex;
     justify-content:center;
     align-items:center;
-    padding-top:100px;
+    padding-top:150px;
 }
 
 #player-options span {
@@ -236,7 +236,7 @@ html {
 }
 
 .icons-rps {
-    width:80px;
+    width:125px;
     height:auto;
 }
 
