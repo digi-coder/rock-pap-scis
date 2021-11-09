@@ -28,6 +28,7 @@ html {
 #header .flex-nav {
     display:flex;
     justify-content:flex-end;
+    align-content:center;
     flex:2;
 }
 
@@ -47,6 +48,7 @@ html {
     font-family: Josefin Sans,sans-serif;
     font-weight: 300;
     font-size: 21px;
+    margin:0;
 }
 
 #hero-banner {
@@ -54,8 +56,10 @@ html {
     align-items:center;
     width: 100%;
     min-height: 100vh;
-    background-image:url(../images/banner-image-bw.jpg);
+    background-image:url(../images/banner-image-bw-icons.jpg);
     background-size: cover;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
 }
 
 #hero-banner-inner {
@@ -78,7 +82,7 @@ html {
     font-size: 40px;
     color:white;
     line-height: 1.2;
-    font-weight: lighter;
+    font-weight: 300;
     margin: 0;
     padding-left:100px;
     font-family: Josefin Sans,sans-serif;
