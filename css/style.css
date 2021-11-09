@@ -220,10 +220,15 @@ html {
     align-items:center;
 }
 
+#computer-hand {
+    transform: rotateY(180deg);
+}
+
 #player-options {
     display:flex;
-    justify-content:flex-start;
+    justify-content:center;
     align-items:center;
+    padding-top:100px;
 }
 
 #player-options span {
@@ -231,7 +236,7 @@ html {
 }
 
 .icons-rps {
-    width:100px;
+    width:80px;
     height:auto;
 }
 
