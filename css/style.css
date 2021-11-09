@@ -203,9 +203,14 @@ html {
     justify-content:space-around;
 }
 
-#hands player-hand {
+#hands {
     display:flex;
     justify-content:space-around;
+}
+
+#hands player-hand {
+    display:flex;
+    justify-content:flex-start;
     align-items:center;
 }
 
@@ -219,6 +224,15 @@ html {
     display:flex;
     justify-content:flex-start;
     align-items:center;
+}
+
+#player-options span {
+    display:none;
+}
+
+.icons-rps {
+    width:100px;
+    height:auto;
 }
 
 #winner {

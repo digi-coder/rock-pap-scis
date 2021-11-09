@@ -28,8 +28,8 @@ const game = () => {
                 const computerNumber = Math.floor(Math.random() * 3);
                 const compChoice = computerOptions[computerNumber];
                 //Update images
-                playerHand.src =`assets/${this.textContent}.png`;
-                computerHand.src =`assets/${compChoice}.png`;
+                playerHand.src = `assets/${this.textContent}.png`;
+                computerHand.src = `assets/${compChoice}.png`;
                 compareHands(this.textContent, compChoice);
             });
         });
