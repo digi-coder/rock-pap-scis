@@ -9,10 +9,6 @@ html {
     font-family: Josefin Sans,sans-serif;
 }
 
-#container {
-
-}
-
 #header {
     display:flex;
     align-items:center;
@@ -124,7 +120,11 @@ html {
     flex-direction:column;
     width: 100%;
     min-height: 100vh;
-    background-color:whitesmoke;
+    background-color:white;
+}
+
+#main-container .logo img {
+    width: 175px;
 }
 
 #game-rounds {
@@ -250,4 +250,93 @@ html {
     display:flex;
     justify-content:flex-start;
     align-items:center;
+}
+
+#footer {
+    display:flex;
+    align-items:center;
+    width: 100%;
+    min-height: 50vh;
+    background-image:url(../images/footer-image.jpg);
+    background-size: cover;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+}
+
+#footer-container {
+    display:flex;
+    justify-content:space-between;
+    width:100%
+
+}
+
+#footer-left {
+    padding-left:170px;
+    padding-top:30px;
+    width:auto;
+    height:300px;
+    flex:3;
+}
+
+#footer-title {
+    font-size: 24px;
+    line-height: 20px;
+    color:white;
+    font-weight:600;
+    text-transform: uppercase;
+}
+
+#footer-subtitle {
+    color: #fff;
+    font-size: 20px;
+    max-width: 340px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+#social-icons {
+    padding-right:10px;
+}
+
+#footer-center {
+    display:flex;
+    flex:2;
+}
+
+#footer-right {
+    display:flex;
+    justify-content:center;
+    flex:2;
+    padding-right:50px;
+    padding-top:30px;
+    width:auto;
+    height:300px;
+    flex:3;
+}
+
+#footer-credits-container {
+    display:flex;
+    align-content:center;
+    flex-direction: column;
+}
+
+#footer-credits-title {
+    font-size: 20px;
+    line-height: 20px;
+    color:white;
+    font-weight:600;
+    text-transform: uppercase;
+}
+
+#footer-credits, a {
+    margin:0;
+    color: #fff;
+    font-size: 18px;
+    max-width: 360px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
 }
