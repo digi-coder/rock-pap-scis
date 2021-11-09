@@ -246,17 +246,18 @@ html {
     align-items:center;
 }
 
-#computer-output {
+/* #scroll-footer{
     display:flex;
-    justify-content:flex-start;
-    align-items:center;
-}
+    justify-content:center;
+    position: absolute;
+    bottom: 0;
+} */
 
 #footer {
     display:flex;
     align-items:center;
     width: 100%;
-    min-height: 50vh;
+    min-height: 60vh;
     background-image:url(../images/footer-image.jpg);
     background-size: cover;
     background-position: 50% 25%;
