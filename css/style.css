@@ -87,15 +87,33 @@ html {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 37.500em) {
+    #hero-banner {
+        min-height: 50vh;
+    }
+}
+
 #hero-banner-inner {
     display:flex;
     width:100%;
+}
+
+@media (max-width: 37.500em) {
+    #hero-banner-inner {
+        flex-direction:column;
+    }
 }
 
 #hero-banner-left {
     display:flex;
     justify-content: flex-start;
     flex:3;
+}
+
+@media (max-width: 37.500em) {
+    #hero-banner-left  {
+        flex:3;
+    }
 }
 
 #hero-banner-left h1 {
@@ -113,6 +131,15 @@ html {
     font-family: Josefin Sans,sans-serif;
 }
 
+@media (max-width: 37.500em) {
+    #hero-banner-left h1 {
+        justify-content: center;
+        font-size:2.200em;
+        padding-left:0;
+        padding-bottom:2.000em
+    }
+}
+
 #hero-banner-center {
     display:flex;
     justify-content:flex-start;
@@ -128,6 +155,14 @@ html {
     width:100%;
     white-space: nowrap;
     font-family: Josefin Sans,sans-serif;
+}
+
+@media (max-width: 37.500em) {
+    #hero-banner-center h3 {
+        margin:0;
+        padding-top:3.000em;
+        font-size:1.000em;
+    }
 }
 
 #hero-banner-center a {
