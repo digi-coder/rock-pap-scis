@@ -127,7 +127,6 @@ html {
     line-height: 1.2;
     font-weight: bold;
     margin: 0;
-    padding-top:2.000em;
     padding-left:4.500em;
     font-family: Josefin Sans,sans-serif;
 }
@@ -136,6 +135,7 @@ html {
     #hero-banner-left h1 {
         justify-content: center;
         font-size:2.100em;
+        padding-top:2.000em;
         padding-left:0;
         padding-bottom:2.000em
     }
