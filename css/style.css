@@ -89,7 +89,7 @@ html {
 
 @media (max-width: 37.500em) {
     #hero-banner {
-        min-height: 50vh;
+        background-image:url(../images/banner-image-bw-icons-v.jpg);
     }
 }
 
@@ -127,6 +127,7 @@ html {
     line-height: 1.2;
     font-weight: bold;
     margin: 0;
+    padding-top:2.000em;
     padding-left:4.500em;
     font-family: Josefin Sans,sans-serif;
 }
@@ -134,7 +135,7 @@ html {
 @media (max-width: 37.500em) {
     #hero-banner-left h1 {
         justify-content: center;
-        font-size:2.200em;
+        font-size:2.100em;
         padding-left:0;
         padding-bottom:2.000em
     }
@@ -151,7 +152,7 @@ html {
     font-size: 1.375em;
     font-weight: 400;
     text-transform: uppercase;
-    padding-left:3.000em;
+    padding-left:4.700em;
     width:100%;
     white-space: nowrap;
     font-family: Josefin Sans,sans-serif;
@@ -161,7 +162,15 @@ html {
     #hero-banner-center h3 {
         margin:0;
         padding-top:3.000em;
-        font-size:1.000em;
+        font-size:0.900em;
+
+    }
+}
+
+@media (max-width: 37.500em) {
+    #hero-banner-center img {
+        width:3.000em;
+        height:auto;
     }
 }
 
@@ -380,7 +389,7 @@ html {
 
 #footer-left {
     padding-left:10.625em;
-    padding-top:1.875em;
+    padding-top:0;
     width:auto;
     height:18.750em;
     flex:3;
@@ -451,7 +460,7 @@ html {
     justify-content:center;
     flex:3;
     padding-right:3.125em;
-    padding-top:1.875em;
+    padding-top:0;
     width:auto;
     height:18.750em;
 }
@@ -472,7 +481,7 @@ html {
 }
 
 #footer-credits-title {
-    font-size: 1.250em;
+    font-size: 1.500em;
     line-height: 1.250em;
     color:white;
     font-weight:600;
