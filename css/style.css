@@ -110,6 +110,7 @@ html {
     text-decoration: none;
     display: flex;
     align-items:center;
+    margin:0;
 }
 
 #hero-banner-right {
