@@ -294,8 +294,8 @@ html {
 }
 
 @media (max-width: 37.500em) {
-    #rock-paper-scissors-interface hands img {
-        width: 9.000em;
+    #hands img {
+        width: 7.000em;
         height:auto;
     }
 }
@@ -317,6 +317,12 @@ html {
     padding-top:9.375em;
 }
 
+@media (max-width: 37.500em) {
+    #player-options {
+        padding-top:3.000em;
+    }
+}
+
 #player-options span {
     display:none;
 }
@@ -326,18 +332,27 @@ html {
     height:auto;
 }
 
+@media (max-width: 37.500em) {
+    .icons-rps {
+        width:3.000em;
+        height:auto;
+    }
+}
+
 #winner {
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-/* #scroll-footer{
-    display:flex;
-    justify-content:center;
-    position: absolute;
-    bottom: 0;
-} */
+@media (max-width: 37.500em) {
+    #winner {
+        width:0.500em;
+        height:0.500em;
+        font-size:0.800em;
+        text-align:center;
+    }
+}
 
 #footer {
     display:flex;
@@ -348,6 +363,12 @@ html {
     background-size: cover;
     background-position: 50% 25%;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 37.500em) {
+    #footer {
+        min-height: 100vh;
+    }
 }
 
 #footer-container {
@@ -365,12 +386,27 @@ html {
     flex:3;
 }
 
+@media (max-width: 37.500em) {
+    #footer-left {
+        padding-top:0;
+        padding-right:0.500em;
+        padding-left:0.500em;
+        flex:2;
+    }
+}
+
 #footer-title {
     font-size: 1.500em;
     line-height: 1.250em;
     color:white;
     font-weight:600;
     text-transform: uppercase;
+}
+
+@media (max-width: 37.500em) {
+    #footer-title {
+        font-size: 1.000em;
+    }
 }
 
 #footer-subtitle {
@@ -382,8 +418,21 @@ html {
     font-weight: 400;
 }
 
+@media (max-width: 37.500em) {
+    #footer-subtitle {
+        font-size: 0.800em;
+    }
+}
+
 #social-icons {
     padding-right:0.625em;
+}
+
+@media (max-width: 37.500em) {
+    #social-icons img {
+        width: 1.000em;
+        height: auto;
+    }
 }
 
 #footer-center {
@@ -391,15 +440,29 @@ html {
     flex:2;
 }
 
+@media (max-width: 37.500em) {
+    #footer-center {
+        flex:0;
+    }
+}
+
 #footer-right {
     display:flex;
     justify-content:center;
-    flex:2;
+    flex:3;
     padding-right:3.125em;
     padding-top:1.875em;
     width:auto;
     height:18.750em;
-    flex:3;
+}
+
+@media (max-width: 37.500em) {
+    #footer-right {
+        padding-top:0;
+        padding-right:0.500em;
+        padding-left:0.500em;
+        flex:2;
+    }
 }
 
 #footer-credits-container {
@@ -414,6 +477,18 @@ html {
     color:white;
     font-weight:600;
     text-transform: uppercase;
+}
+
+@media (max-width: 37.500em) {
+    #footer-credits-title {
+        font-size: 1.000em;
+    }
+}
+
+@media (max-width: 37.500em) {
+    #footer-credits-container h3 {
+        font-size: 0.800em;
+    }
 }
 
 #footer-credits, a {
