@@ -21,8 +21,21 @@ html {
     flex: 4;
 }
 
+@media (max-width: 37.500em) {
+    #header .logo {
+        flex: 2;
+    }
+}
+
 #header .logo img {
     width: 10.938em;
+}
+
+@media (max-width: 37.500em) {
+    #header .logo img {
+        width: 7.000em;
+        height:auto;
+    }
 }
 
 #header .flex-nav {
@@ -41,6 +54,12 @@ html {
     padding: 0.625;
 }
 
+@media (max-width: 37.500em) {
+    #header .flex-nav ul {
+        flex-direction:column;
+    }
+}
+
 #header .flex-nav .nav-links a {
     color: whitesmoke;
     text-decoration: none;
@@ -49,6 +68,12 @@ html {
     font-weight: 300;
     font-size: 1.313em;
     margin:0;
+}
+
+@media (max-width: 37.500em) {
+    #header .flex-nav .nav-links a {
+        font-size: 1.000em;
+    }
 }
 
 #hero-banner {
@@ -132,6 +157,13 @@ html {
     width: 11.563em;
 }
 
+@media (max-width: 37.500em) {
+    #main-container .logo img {
+        width: 7.000em;
+        height:auto;
+    }
+}
+
 #game-rounds {
     display:flex;
     justify-content:center;
@@ -143,6 +175,13 @@ html {
     font-weight:lighter;
     padding-top:5.000em;
     padding-bottom:5.000em;
+}
+
+@media (max-width: 37.500em) {
+    #game-rounds {
+        padding-top:0.500em;
+        padding-bottom:0.500em;
+    }
 }
 
 #game-score-titles {
@@ -217,6 +256,13 @@ html {
     display:flex;
     justify-content:flex-start;
     align-items:center;
+}
+
+@media (max-width: 37.500em) {
+    #rock-paper-scissors-interface hands img {
+        width: 9.000em;
+        height:auto;
+    }
 }
 
 #hands computer-hand {
