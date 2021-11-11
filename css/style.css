@@ -428,7 +428,8 @@ html {
 
 @media (max-width: 37.500em) {
     #footer-title {
-        font-size: 1.000em;
+        font-size: 1.200em;
+        font-weight: 900;
     }
 }
 
@@ -443,7 +444,8 @@ html {
 
 @media (max-width: 37.500em) {
     #footer-subtitle {
-        font-size: 0.800em;
+        font-size: 0.900em;
+        font-weight: 600;
     }
 }
 
@@ -453,7 +455,7 @@ html {
 
 @media (max-width: 37.500em) {
     #social-icons img {
-        width: 1.000em;
+        width: 1.500em;
         height: auto;
     }
 }
@@ -504,13 +506,15 @@ html {
 
 @media (max-width: 37.500em) {
     #footer-credits-title {
-        font-size: 1.000em;
+        font-size: 1.200em;
+        font-weight: 900;
     }
 }
 
 @media (max-width: 37.500em) {
     #footer-credits-container h3 {
-        font-size: 0.800em;
+        font-size: 0.900em;
+        font-weight: 600;
     }
 }
 
