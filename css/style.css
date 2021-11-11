@@ -81,15 +81,21 @@ html {
     align-items:center;
     width: 100%;
     min-height: 100vh;
-    background-image:url(../images/banner-image-bw-icons.jpg);
+    background-image:url(../images/banner-image-bw-icons-phone.jpg);
     background-size: cover;
     background-position: 50% 60%;
     background-repeat: no-repeat;
 }
 
-@media (max-width: 37.500em) {
+@media (min-width: 480px) {
     #hero-banner {
-        background-image:url(../images/banner-image-bw-icons-v.jpg);
+        background-image:url(../images/banner-image-bw-icons.jpg);
+    }
+}
+
+@media (min-width: 768px) {
+    #hero-banner {
+        background-image:url(../images/banner-image-bw-icons-tab.jpg);
     }
 }
 
@@ -143,7 +149,7 @@ html {
 
 #hero-banner-center {
     display:flex;
-    justify-content:flex-start;
+    justify-content:center;
     align-items:center;
     flex:2;
 }
@@ -162,6 +168,7 @@ html {
     #hero-banner-center h3 {
         margin:0;
         padding-top:3.000em;
+        padding-left:7.000em;;
         font-size:0.900em;
 
     }
@@ -296,6 +303,13 @@ html {
     justify-content:space-around;
 }
 
+@media (max-width: 37.500em) {
+    #hands {
+        padding-top:2.000em;
+        padding-bottom:3.000em;
+    }
+}
+
 #hands player-hand {
     display:flex;
     justify-content:flex-start;
@@ -376,7 +390,7 @@ html {
 
 @media (max-width: 37.500em) {
     #footer {
-        min-height: 100vh;
+        min-height: 30vh;
     }
 }
 
