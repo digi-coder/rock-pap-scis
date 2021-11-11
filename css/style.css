@@ -89,13 +89,13 @@ html {
 
 @media (min-width: 480px) {
     #hero-banner {
-        background-image:url(../images/banner-image-bw-icons.jpg);
+        background-image:url(../images/banner-image-bw-icons-tab.jpg);
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
     #hero-banner {
-        background-image:url(../images/banner-image-bw-icons-tab.jpg);
+        background-image:url(../images/banner-image-bw-icons.jpg);
     }
 }
 
