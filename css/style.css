@@ -249,7 +249,7 @@ html {
     justify-content:flex-start;
     align-items:center;
     color:rgb(153, 151, 151);
-    font-weight:400;
+    font-weight:600;
     
 }
 
@@ -258,7 +258,7 @@ html {
     justify-content:center;
     align-items:center;
     color:rgb(153, 151, 151);
-    font-weight:400;
+    font-weight:600;
 }
 
 #computer-score {
@@ -266,7 +266,7 @@ html {
     justify-content:flex-end;
     align-items:center;
     color:rgb(153, 151, 151);
-    font-weight:400;
+    font-weight:600;
 }
 
 #game-score-values {
